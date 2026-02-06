@@ -1,0 +1,97 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 50px;
+  background-color: rgb(170, 170, 170);
+  color: white;
+  min-height: 50vh;
+  display: grid;
+  place-items: center;
+  margin: 10px 0 0 0;
+}
+
+#formulario {
+  padding: 20px;
+  background-color: rgb(55, 55, 55);
+}
+
+#numero {
+  width: 100px;
+  height: 20px;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+#numero:focus {
+  outline: 2px solid blue;
+  border-color: blue;
+  background-color: #d6ecff;
+}
+
+#btnVerificar {
+  padding: 5px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: rgb(195, 138, 248);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+#btnVerificar:hover {
+  background-color: #007bff; /* Cor do hover */
+  transform: scale(1.05); /* Aumenta levemente */
+}
+
+#btnVerificar:focus-visible {
+  outline: 3px solid #00ffff;
+  outline-offset: 3px;
+}
+
+#digitarNumero {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 10px;
+}
+
+#pBotao {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+#resultado {
+  min-height: 80px;
+  margin: 0;
+  text-align: center;
+  font-size: 68px;
+}
+
+.fade-in {
+  animation: fadeIn 0.4s ease forwards;
+}
+
+.fade-out {
+  animation: fadeOut 0.4s ease forwards;
+}
